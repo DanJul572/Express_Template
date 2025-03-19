@@ -5,7 +5,7 @@ import vitest from '@vitest/eslint-plugin';
 
 export default tseslint.config(
   {
-    ignores: ['**/*.js'],
+    ignores: ['**/*.js', 'drizzle.config.ts'],
   },
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,

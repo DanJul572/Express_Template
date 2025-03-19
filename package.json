@@ -36,6 +36,9 @@
   },
   "packageManager": "pnpm@10.6.4",
   "dependencies": {
+    "@libsql/client": "^0.15.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.1",
     "express": "^4.21.2"
   },
   "devDependencies": {
@@ -45,6 +48,7 @@
     "@types/node": "^22.13.10",
     "@vitest/coverage-v8": "^3.0.9",
     "@vitest/eslint-plugin": "^1.1.38",
+    "drizzle-kit": "^0.30.5",
     "eslint": "^9.22.0",
     "eslint-plugin-perfectionist": "^4.10.1",
     "husky": "^9.1.7",
