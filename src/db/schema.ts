@@ -1,8 +1,8 @@
-import { int, sqliteTable, text } from 'drizzle-orm/sqlite-core';
+import { integer, pgTable, varchar } from 'drizzle-orm/pg-core';
 
-export const usersTable = sqliteTable('users', {
-  email: text().notNull().unique(),
-  id: int().primaryKey({ autoIncrement: true }),
-  name: text().notNull(),
-  password: text().notNull(),
+export const usersTable = pgTable('users', {
+  email: varchar({ length: 255 }).notNull().unique(),
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  name: varchar({ length: 255 }).notNull(),
+  password: varchar({ length: 255 }).notNull(),
 });
